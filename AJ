@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Amirul - Prudential BSN Takaful</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f6f8;
+      color: #333;
+    }
+
+    header {
+      background: #e60012;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    section.hero {
+      background: url('https://images.unsplash.com/photo-1588776814546-ec83b9b4b798?auto=format&fit=crop&w=1170&q=80') center/cover no-repeat;
+      height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    section.hero h2 {
+      font-size: 2.5em;
+    }
+
+    section.content {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    section.content h3 {
+      color: #e60012;
+    }
+
+    .contact-box, .form-box, .testimonial-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+
+    .contact-box p, .form-box p {
+      font-size: 1.1em;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #e60012;
+      color: #fff;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin-top: 10px;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #b8000d;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+
+    form button {
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+      margin-top: 40px;
+    }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 25px;
+      background-color: #e60012;
+      color: white;
+      border: none;
+      padding: 12px 16px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 16px;
+      z-index: 1001;
+    }
+
+    #topBtn:hover {
+      background-color: #b8000d;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 25px;
+      right: 25px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-float img {
+      width: 28px;
+      height: 28px;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      background-color: #1ebe5b;
+    }
+
+    .testimonial {
+      background: #f9f9f9;
+      padding: 15px;
+      border-left: 4px solid #e60012;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 8px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      section.hero h2 {
+        font-size: 1.8em;
+        text-align: center;
+        padding: 0 10px;
+      }
+
+      .contact-box p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Agent Amirul</h1>
+    <p>Prudential BSN Takaful</p>
+  </header>
+
+  <section class="hero">
+    <h2>Lindungi Masa Depan Anda Hari Ini</h2>
+  </section>
+
+  <section class="content">
+    <h3>Kenapa Pilih Saya?</h3>
+    <p>Sebagai Agent berdaftar Prudential BSN Takaful, saya, <strong>Agent Amirul</strong>, bersedia membantu anda memilih pelan perlindungan terbaik untuk diri anda dan keluarga.</p>
+    <ul>
+      <li>Pelan Takaful Keluarga</li>
+      <li>Pelan Medical Card</li>
+      <li>Pelan Pendidikan Anak</li>
+      <li>Pelan Simpanan & Pelaburan</li>
+    </ul>
+
+    <div class="contact-box">
+      <h3>Hubungi Saya Sekarang</h3>
+      <p>📞 <strong>018-8705007</strong> (Call / WhatsApp)</p>
+      <a class="btn" href="https://wa.me/60188705007?text=Hai%20Agent%20Amirul%2C%20saya%20berminat%20dengan%20pelan%20Takaful." target="_blank">WhatsApp Sekarang</a>
+    </div>
+
+    <div class="form-box">
+      <h3>Daftar Minat Anda</h3>
+      <form onsubmit="handleSubmit(event)">
+        <input type="text" id="nama" placeholder="Nama Penuh" required>
+        <input type="tel" id="telefon" placeholder="Nombor Telefon" required>
+        <textarea id="mesej" rows="4" placeholder="Mesej atau pertanyaan anda..."></textarea>
+        <button type="submit" class="btn">Hantar</button>
+      </form>
+    </div>
+
+    <div class="testimonial-box">
+      <h3>Apa Kata Pelanggan</h3>
+      <div class="testimonial">
+        "Agent Amirul sangat membantu & menerangkan pelan dengan jelas. Saya rasa lebih yakin sekarang."
+        <strong>- Nur Aina, Putrajaya</strong>
+      </div>
+      <div class="testimonial">
+        "Servis sangat pantas dan mesra. Recommended!"
+        <strong>- En. Farid, Johor Bahru</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- WhatsApp Terapung -->
+  <a href="https://wa.me/60188705007?text=Hai%20Agent%20Amirul%2C%20saya%20berminat%20dengan%20pelan%20Takaful." 
+     class="whatsapp-float" target="_blank" title="Chat dengan Agent Amirul">
+    <img src="https://img.icons8.com/ios-filled/50/ffffff/whatsapp.png" alt="WhatsApp">
+  </a>
+
+  <!-- Butang Scroll to Top -->
+  <button onclick="topFunction()" id="topBtn" title="Ke Atas">↑</button>
+
+  <footer>
+    <p>© 2025 Agent Amirul | Prudential BSN Takaful</p>
+  </footer>
+
+  <script>
+    // Butang ke atas
+    let topBtn = document.getElementById("topBtn");
+    window.onscroll = function() {
+      topBtn.style.display = (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) ? "block" : "none";
+    };
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Simulasi borang hantar
+    function handleSubmit(event) {
+      event.preventDefault();
+      const nama = document.getElementById("nama").value;
+      const telefon = document.getElementById("telefon").value;
+      const mesej = document.getElementById("mesej").value || "Saya berminat dengan pelan takaful.";
+
+      const url = `https://wa.me/60188705007?text=Hai%20Agent%20Amirul%2C%20saya%20${encodeURIComponent(nama)}%20(${encodeURIComponent(telefon)}).%20${encodeURIComponent(mesej)}`;
+      window.open(url, '_blank');
+    }
+  </script>
+
+</body>
+</html>
